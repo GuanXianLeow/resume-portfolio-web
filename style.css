@@ -7,6 +7,7 @@
 }
 body {
   background-color: #22374b;
+  height: 100%;
 }
 nav {
   background: #0082e6;
@@ -154,10 +155,6 @@ a:hover {
   }
 }
 
-#banner {
-  margin: 0px auto;
-}
-
 #contact {
   background-color: "";
   width: 100%;
@@ -182,8 +179,62 @@ a:hover {
   left: 1%;
 }
 
+.cardcontainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: 200px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 40%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+#banner {
+  margin: 0px auto;
+  bottom: 0;
+}
+
+#banner1 {
+  margin: 0px auto;
+}
+
 @media all and (max-width: 500px) {
   #banner {
+    margin: 0px auto;
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .s1 {
+    height: 100px;
+  }
+}
+@media all and (max-width: 500px) {
+  .s3 {
+    height: 100px;
+  }
+}
+@media all and (max-width: 500px) {
+  #button {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  #web {
     margin: 0px auto;
     width: 100%;
   }
