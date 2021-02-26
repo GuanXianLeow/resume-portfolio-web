@@ -96,6 +96,7 @@ a:hover {
   }
 }
 
+/* wave effect */
 #button {
   position: relative;
   padding-top: 4%;
@@ -114,6 +115,7 @@ a:hover {
   display: inline-block;
   margin: 0px 0px 100px 450px;
 }
+
 #button span {
   position: relative;
   z-index: 1;
@@ -165,11 +167,14 @@ a:hover {
   padding: 0px 800px;
 }
 
+/*jelly fish */
 .s1 {
   position: absolute;
   height: 450px;
   top: 20%;
   right: 5%;
+  animation-name: example;
+  animation-duration: 4s;
 }
 
 .s3 {
@@ -179,11 +184,39 @@ a:hover {
   left: 1%;
 }
 
+/*bubble */
+.bubbleWrapper {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.bubbleWrapper span {
+  position: absolute;
+  bottom: 0px;
+  background-color: transparent;
+  box-shadow: inset 0px 0px 10px #ffffff80;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: moveBubbles 3.5s linear infinite;
+}
+
+@keyframes moveBubbles {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-1300%);
+  }
+}
+
 .cardcontainer {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  height: 200px;
 }
 
 .card {
@@ -200,13 +233,26 @@ a:hover {
   padding: 2px 16px;
 }
 
-#banner {
-  margin: 0px auto;
-  bottom: 0;
+/* resume page */
+.resume1 {
+  text-align: center;
+  width: 450px;
+  margin: auto;
+  color: #fff;
 }
 
-#banner1 {
-  margin: 0px auto;
+.resume2 {
+  text-align: center;
+  width: 450px;
+  margin: auto;
+  color: #fff;
+}
+
+.resume3 {
+  text-align: center;
+  width: 450px;
+  margin: auto;
+  color: #fff;
 }
 
 @media all and (max-width: 500px) {
