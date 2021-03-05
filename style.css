@@ -9,10 +9,15 @@ body {
   background-color: #22374b;
   height: 100%;
 }
+label {
+  font-family: "Cabin", sans-serif;
+}
 nav {
   background: #0082e6;
   height: 80px;
   width: 100%;
+  font-family: "Inter", sans-serif;
+  font-family: "Cabin", sans-serif;
 }
 label.logo {
   color: white;
@@ -157,6 +162,18 @@ a:hover {
   }
 }
 
+#about {
+  width: 100%;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 200px 200px auto 200px;
+  align-items: center;
+  padding: 0px 800px;
+}
+#about span {
+  color: #ffffff;
+}
+
 #contact {
   background-color: "";
   width: 100%;
@@ -226,7 +243,7 @@ a:hover {
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.5);
 }
 
 .container {
@@ -253,6 +270,69 @@ a:hover {
   width: 450px;
   margin: auto;
   color: #fff;
+}
+
+/* game page */
+
+body1 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, lightblue, darkblue);
+}
+.container1 {
+  width: 800px;
+  height: 500px;
+}
+
+#canvas1 {
+  width: 800px;
+  height: 500px;
+  border: 4px solid black;
+  background: linear-gradient(to bottom, lightblue, darkblue);
+}
+
+article {
+  font-family: monospace;
+  color: white;
+  width: 100%;
+  color: black;
+  font-size: 20px;
+  text-shadow: 1px 1px 1px #737373;
+  background: darkblue;
+  left: 0;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  padding-right: 20px;
+}
+article span,
+article span > a {
+  color: white;
+}
+
+footer1 {
+  font-family: monospace;
+  position: absolute;
+  width: 100%;
+  color: white;
+  font-size: 15px;
+  text-shadow: 1px 1px 1px #737373;
+  background: rgba(0, 0, 0, 0.5);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  padding-right: 20px;
+}
+footer a {
+  color: white;
 }
 
 @media all and (max-width: 500px) {
