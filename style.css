@@ -6,14 +6,14 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #22374b;
+  background-color: #003d5b;
   height: 100%;
 }
 label {
   font-family: "Cabin", sans-serif;
 }
 nav {
-  background: #0082e6;
+  background: #00798c;
   height: 80px;
   width: 100%;
   font-family: "Inter", sans-serif;
@@ -101,6 +101,16 @@ a:hover {
   }
 }
 
+/* text */
+
+h1 {
+  font-family: "Karla", sans-serif;
+}
+
+p {
+  font-family: "Karla", sans-serif;
+}
+
 /* wave effect */
 #button {
   position: relative;
@@ -119,6 +129,7 @@ a:hover {
   overflow: hidden;
   display: inline-block;
   margin: 0px 0px 100px 450px;
+  font-family: "Karla", sans-serif;
 }
 
 #button span {
@@ -230,6 +241,7 @@ a:hover {
   }
 }
 
+/* card */
 .cardcontainer {
   display: flex;
   justify-content: space-evenly;
@@ -240,6 +252,7 @@ a:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   width: 40%;
+  color: white;
 }
 
 .card:hover {
@@ -274,7 +287,7 @@ a:hover {
 
 /* game page */
 
-body1 {
+.gamebody {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -313,6 +326,13 @@ article {
 article span,
 article span > a {
   color: white;
+}
+
+.gametext {
+  text-align: center;
+  width: 450px;
+  margin: auto;
+  color: #fff;
 }
 
 footer1 {
